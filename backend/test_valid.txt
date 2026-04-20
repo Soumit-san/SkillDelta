@@ -1,0 +1,6 @@
+Data Structures and Algorithms Exam
+
+Array Traversal - 90%
+Graph Traversal - 45%
+Dynamic Programming - 20%
+Linked Lists - 80%

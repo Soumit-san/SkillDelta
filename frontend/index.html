@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- ✅ TailwindCSS CDN – NO INSTALLATION NEEDED -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ❗ Optional: SkillDelta Custom Theme Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            skillbg: "#0f0c29",
+            skillmid: "#302b63",
+            skillend: "#24243e",
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Prevent unwanted cursor blink globally, but allow it in inputs */
+    * {
+      caret-color: transparent;
+      user-select: none;
+    }
+
+    input,
+    textarea,
+    [contenteditable="true"] {
+      caret-color: auto;
+      user-select: auto;
+    }
+
+    /* Minimal custom scrollbar for webkit browsers */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Minimal custom scrollbar for Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+    }
+  </style>
+
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillDelta</title>
+</head>
+
+<body class="bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white min-h-screen">
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
